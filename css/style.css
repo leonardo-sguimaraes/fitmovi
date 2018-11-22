@@ -1,0 +1,50 @@
+/* foto do Logo, Fitmovi. Inicio*/
+#fotoA{
+
+  margin-left: 80px;
+  height: 100px;
+  width: 200px;
+}
+/* foto do Logo, Fitmovi. Fim*/
+
+
+/* Tabela da seleção cadastral. Inicio */
+table, th , td, a {
+  text-decoration: none;
+  border:5px  ;
+  border-color: yellow;
+  background-color: white;
+  text-align: center;
+}
+td:hover{
+
+
+}
+/* Tabela da seleção cadastral.  Fim */
+
+
+/*Frases da pagina home. Inicio*/
+
+/*Primeira frase da pagina*/
+.fraseUm{
+background-color: white;
+font-family:"Arial Black", arial, sans-serif;
+font-style: normal;
+font-size: 14px;
+margin-bottom: 5px;
+}
+
+/*Primeira frase da pagina*/
+.fraseDois{
+  margin-top: 10px;
+}
+/*Frases da pagina home. Fim*/
+.DivLembre{float: right;
+margin-right: 50px;
+}
+
+.lembreme{
+margin-top: 75px;
+font-size: 20px;
+
+}

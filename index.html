@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+
+<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+
+
+    <ons-page >
+        <!--foto do Logo, Fitmovi. Inicio -->
+        <div id="fotoLogo">
+          <img id="fotoA" src="logo.png" alt="Logo">
+        </div>
+        <!--foto do Logo, Fitmovi. Fim -->
+
+    <br>
+<!--Primeira frase da pagina. Inicio -->
+<div class="fraseUm">
+<center> para cadastrar-se escolha seu perfil</center>
+</div>
+<!--Primeira frase da pagina. Fim -->
+
+<!--Tabela da seleção cadastral.  Inicio -->
+    <center> <table id="cadastroT" name="cadastroT">
+     <tr>
+         <td><img src="img/avatar.png"></td>
+           <td><img src="img/avatar.png"></td>
+          <td><img  src="img/avatar.png"></td>
+     </tr>
+     <tr>
+         <td><a href="pages/home.html"> Aluno</a> </td>
+         <td> Professor(a) </td>
+         <td> Empresa</td>
+     </tr>
+   </table> </center>
+   <!--Tabela da seleção cadastral.  Fim -->
+
+
+<!--Segunda frase da pagina. Inicio -->
+<div id="fraseSegunda" class="fraseDois">
+  <center> Insira seu e-mail e senha para acessar a plataforma. </center>
+</div>
+<!--Segunda frase da pagina. Fim -->
+
+
+
+<!--Sistema de Login. Inico -->
+      <div style="text-align: center; margin-top: 30px;">
+        <p>
+          <ons-input id="username" modifier="underbar" placeholder="E-mail" float></ons-input>
+        </p>
+        <p>
+          <ons-input id="password" modifier="underbar" type="password" placeholder="Senha" float></ons-input>
+        </p>
+        <p style="margin-top: 30px;">
+          <ons-button modifier="quiet" style="font-size:11px;"> Esqueci minha senha. </ons-button>
+          <ons-button onclick="login()">Entrar</ons-button>
+        </p>
+      </div>
+<br><br>
+      <div class="DivLembre">
+        <label class="switch">
+    <input type="checkbox" class="switch__input">
+    <div class="switch__toggle">
+      <div class="switch__handle"> </div>
+    </div>
+  </label>
+  <label class="lembreme" >Lembre-me</label>
+
+      </div>
+
+<!--Sistema de Login. Fim -->
+
+    </ons-page>
+  </body>
+
+
+
+
+  <script type="text/javascript">
+
+  var login = function() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    if (username === 'admin' && password === 'admin') {
+      ons.notification.alert('Bem Vindo!');
+    } else {
+      ons.notification.alert('Nome ou Senha incorreta.');
+    }
+  };
+
+  </script>
+</html>
